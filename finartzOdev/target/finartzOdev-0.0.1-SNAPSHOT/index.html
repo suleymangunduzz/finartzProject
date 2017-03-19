@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Finartz</title>
+		
+		<!--  Stylesheets  -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="index.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Finartz Project</a>
+					<button id=addUserButton type="button" class="btn btn-primary">Add New User</button>
+				</div>
+			</div>
+		</nav>
+	
+		<div class="container">
+	
+		<div class="userListDiv"></div>
+		</div>
+	
+	
+		<div id="userModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+	
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">User</h4>
+					</div>
+					
+					<!-- Modal Allert -->
+					<div class="alert alert-danger error-message hidden">
+						Please Fill All Fields !
+					</div>
+	
+					<div class="modal-body">
+						<form>
+							<input id='updateid' style='display:none;'>
+							<input id='updatename' class='updateInput' placeholder='Name'>
+							<input id='updatephone' type='number' class='updateInput' placeholder='Phone'>
+	
+						</form>
+	
+					</div>
+	
+					<div class="modal-footer">
+					    <button type="button" id="update-button" class="btn btn-default">Update</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+	
+	
+		<div id="addNewUserModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+		
+				
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">User</h4>
+					</div>
+					
+					<!-- Modal Allert -->
+					<div class="alert alert-danger error-message hidden">
+						Please Fill All Fields !
+					</div>
+					
+					<div class="modal-body">
+						<form>
+							<input id="saveid" style="display:none;">
+							<input id="savename" class="form-control updateInput" placeholder="Name">
+							<input id="savephone" type="number" class="form-control updateInput" placeholder="Phone">
+	
+						</form>
+	
+					</div>
+	
+					<div class="modal-footer">
+						<button type="button" id="save-button" class="btn btn-default">Save</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+		
+		<div class="loader">
+			<img src="loader.gif" alt="Loader" />
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>

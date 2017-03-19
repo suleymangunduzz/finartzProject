@@ -1,0 +1,84 @@
+.userListDiv {
+	margin-top: 50px;
+}
+
+button.guncelleButton {
+	background: #333;
+	border: none;
+	padding: .5rem 1rem;
+	margin-right: 1rem;
+	color: #fff;
+}
+
+button.silButton {
+	background: #333;
+	border: none;
+	padding: .5rem 1rem;
+	margin-right: 1rem;
+	color: #fff;
+}
+
+.updateInput{
+	display:block;
+	margin-bottom: 1rem;
+}
+
+.error-message {
+	width: 80%;
+	display: block;
+	margin: 15px auto;
+	background: #D64541;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.navbar navbar-default{
+	margin-top:1rem;
+}
+
+#addUserButton {
+	margin-top: 7px;
+}
+
+/* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* The close button */
+.closeAllertButton {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closeAllertButton:hover {
+    color: black;
+}
+
+.loader {
+	position: absolute;
+	width: 248px;
+	height: 248px;
+	margin-left: -124px;
+	margin-top: -124px;
+	left: 50%;
+	top: 50%;
+	z-index: 10;
+	display: none;
+}
+
+.loader img {
+	width: 248px;
+	height: 248px;
+}
